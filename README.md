@@ -153,4 +153,10 @@ For students and recruiters, it highlights problem-solving ability, software des
 
 ---
 
+## Demo
+
+![Black Hole Simulator Demo](screenshots/demo.gif)
+
+---
+
 Always Learning, Always Building
