@@ -135,16 +135,6 @@ python main.py
 
 ---
 
-## Developer
-
-Sameer Raj
-
-B.Tech CSE (AI/ML)
-
-Parul University
-
----
-
 ## Why This Project Matters
 
 This project demonstrates the practical application of programming, mathematics, simulation design, and visualization techniques. It showcases the ability to transform scientific concepts into interactive software systems while maintaining performance and user engagement.
