@@ -1,16 +1,12 @@
-# 🌌 Galaxy Black Hole Simulator
+# Galaxy Black Hole Simulator
 
-<p align="center">
-  <b>A Real-Time Black Hole Gravity Simulation Built Using Python & Pygame</b>
-</p>
+A Real-Time Black Hole Gravity Simulation Built Using Python and Pygame
 
-<p align="center">
-  🕳️ Gravity Simulation • 🌌 Galaxy Visualization • ⭐ Particle Physics • 🔊 Space Ambience
-</p>
+Gravity Simulation • Galaxy Visualization • Particle Physics • Space Ambience
 
 ---
 
-## 📖 Project Overview
+## Project Overview
 
 Galaxy Black Hole Simulator is a real-time physics-inspired visualization project that demonstrates how a black hole interacts with nearby celestial objects through gravitational attraction.
 
@@ -20,7 +16,7 @@ This project was developed to explore simulation programming, object-oriented de
 
 ---
 
-## 🎯 Key Objectives
+## Key Objectives
 
 * Simulate gravitational attraction in a visually engaging way
 * Demonstrate particle-based space visualization
@@ -30,159 +26,58 @@ This project was developed to explore simulation programming, object-oriented de
 
 ---
 
-## 🚀 Features
+## Features
 
-<table>
-<tr>
-<td>
-
-✅ Real-Time Black Hole Simulation
-
-</td>
-<td>
-
-✅ Dynamic Gravity-Based Particle Motion
-
-</td>
-</tr>
-
-<tr>
-<td>
-
-✅ Star Absorption System
-
-</td>
-<td>
-
-✅ Black Hole Mass Growth
-
-</td>
-</tr>
-
-<tr>
-<td>
-
-✅ Dynamic Radius Expansion
-
-</td>
-<td>
-
-✅ Interactive Galaxy Environment
-
-</td>
-</tr>
-
-<tr>
-<td>
-
-✅ Space Ambience Sound
-
-</td>
-<td>
-
-✅ FPS Counter
-
-</td>
-</tr>
-
-<tr>
-<td>
-
-✅ Statistics Dashboard
-
-</td>
-<td>
-
-✅ Particle Generation System
-
-</td>
-</tr>
-
-<tr>
-<td>
-
-✅ Mouse Interaction
-
-</td>
-<td>
-
-✅ Galaxy Burst Feature
-
-</td>
-</tr>
-</table>
+* Real-Time Black Hole Simulation
+* Dynamic Gravity-Based Particle Motion
+* Star Absorption System
+* Black Hole Mass Growth
+* Dynamic Radius Expansion
+* Interactive Galaxy Environment
+* Space Ambience Sound
+* FPS Counter
+* Statistics Dashboard
+* Particle Generation System
+* Mouse Interaction
+* Galaxy Burst Feature
 
 ---
 
-## 🧠 Concepts Used
+## Concepts Used
 
-<table>
-<tr>
-<td>Object-Oriented Programming</td>
-<td>Python Classes</td>
-</tr>
-
-<tr>
-<td>Particle Systems</td>
-<td>Physics Simulation</td>
-</tr>
-
-<tr>
-<td>Game Loop Architecture</td>
-<td>Real-Time Rendering</td>
-</tr>
-
-<tr>
-<td>Mathematical Modeling</td>
-<td>Vector Calculations</td>
-</tr>
-
-<tr>
-<td>Event Handling</td>
-<td>Pygame Framework</td>
-</tr>
-</table>
+| Concept                     | Implementation      |
+| --------------------------- | ------------------- |
+| Object-Oriented Programming | Python Classes      |
+| Particle Systems            | Physics Simulation  |
+| Game Loop Architecture      | Real-Time Rendering |
+| Mathematical Modeling       | Vector Calculations |
+| Event Handling              | Pygame Framework    |
 
 ---
 
-## 🛠 Technology Stack
+## Technology Stack
 
-<table>
-<tr>
-<td>Language</td>
-<td>Python 3.12</td>
-</tr>
-
-<tr>
-<td>Graphics Engine</td>
-<td>Pygame</td>
-</tr>
-
-<tr>
-<td>Version Control</td>
-<td>Git</td>
-</tr>
-
-<tr>
-<td>Repository Hosting</td>
-<td>GitHub</td>
-</tr>
-</table>
+| Component          | Technology  |
+| ------------------ | ----------- |
+| Language           | Python 3.12 |
+| Graphics Engine    | Pygame      |
+| Version Control    | Git         |
+| Repository Hosting | GitHub      |
 
 ---
 
-## 🎮 Controls
+## Controls
 
-| Control     | Action                   |
-| ----------- | ------------------------ |
-| ↑ Arrow Key | Increase Black Hole Mass |
-| ↓ Arrow Key | Decrease Black Hole Mass |
-| Mouse Click | Spawn New Star           |
-| Space Bar   | Create Galaxy Burst      |
+| Control        | Action                   |
+| -------------- | ------------------------ |
+| Up Arrow Key   | Increase Black Hole Mass |
+| Down Arrow Key | Decrease Black Hole Mass |
+| Mouse Click    | Spawn New Star           |
+| Space Bar      | Create Galaxy Burst      |
 
 ---
 
-## 📊 Simulation Statistics
+## Simulation Statistics
 
 The simulator tracks multiple parameters in real time:
 
@@ -193,7 +88,7 @@ The simulator tracks multiple parameters in real time:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 Galaxy-BlackHole-Simulator/
@@ -213,7 +108,7 @@ Galaxy-BlackHole-Simulator/
 
 ---
 
-## ▶️ Installation
+## Installation
 
 ```bash
 git clone https://github.com/sameerraj3479/Galaxy-BlackHole-Simulator.git
@@ -227,7 +122,7 @@ python main.py
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 * Multiple Black Hole Simulation
 * Rotating Accretion Disk
@@ -240,9 +135,9 @@ python main.py
 
 ---
 
-## 👨‍💻 Developer
+## Developer
 
-**Sameer Raj**
+Sameer Raj
 
 B.Tech CSE (AI/ML)
 
@@ -250,7 +145,7 @@ Parul University
 
 ---
 
-## 🌟 Why This Project Matters
+## Why This Project Matters
 
 This project demonstrates the practical application of programming, mathematics, simulation design, and visualization techniques. It showcases the ability to transform scientific concepts into interactive software systems while maintaining performance and user engagement.
 
@@ -258,6 +153,4 @@ For students and recruiters, it highlights problem-solving ability, software des
 
 ---
 
-<p align="center">
-🚀 ⭐ Always Learning, Always Building ⭐ 🚀
-</p>
+Always Learning, Always Building
