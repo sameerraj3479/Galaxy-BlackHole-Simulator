@@ -25,9 +25,10 @@ class Particle:
         dx = blackhole.x - self.x
         dy = blackhole.y - self.y
 
-        distance = math.sqrt(dx*dx + dy*dy)
+        distance = math.sqrt(dx * dx + dy * dy)
 
-        if distance < 20:
+        if distance < blackhole.radius:
+            blackhole.mass += 2
             return False
 
         force = blackhole.mass / (distance * distance)

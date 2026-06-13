@@ -18,7 +18,7 @@ clock = pygame.time.Clock()
 
 font = pygame.font.SysFont("Arial", 24)
 
-# Background sound
+# Background Sound
 try:
     pygame.mixer.music.load("assets/space_ambience.wav.mp3")
     pygame.mixer.music.play(-1)
@@ -31,6 +31,8 @@ blackhole = BlackHole(
     1200
 )
 
+absorbed_count = 0
+
 particles = []
 background_stars = []
 
@@ -41,7 +43,7 @@ for i in range(1000):
         (
             random.randint(0, WIDTH),
             random.randint(0, HEIGHT),
-            random.randint(100,255)
+            random.randint(100, 255)
         )
     )
 
@@ -51,8 +53,8 @@ for i in range(400):
     angle = random.uniform(0, math.pi * 2)
     radius = random.randint(100, 450)
 
-    x = WIDTH//2 + radius * math.cos(angle)
-    y = HEIGHT//2 + radius * math.sin(angle)
+    x = WIDTH // 2 + radius * math.cos(angle)
+    y = HEIGHT // 2 + radius * math.sin(angle)
 
     particles.append(
         Particle(x, y)
@@ -61,6 +63,14 @@ for i in range(400):
 running = True
 
 while running:
+    # Automatic Moving Black Hole
+    blackhole.x = WIDTH // 2 + 300 * math.cos(
+        pygame.time.get_ticks() / 1800
+    )
+
+    blackhole.y = HEIGHT // 2 + 220 * math.sin(
+        pygame.time.get_ticks() / 1800
+    )
 
     clock.tick(60)
 
@@ -77,6 +87,19 @@ while running:
                 Particle(mx, my)
             )
 
+        if event.type == pygame.KEYDOWN:
+
+            if event.key == pygame.K_SPACE:
+
+                for i in range(100):
+
+                    particles.append(
+                        Particle(
+                            random.randint(0, WIDTH),
+                            random.randint(0, HEIGHT)
+                        )
+                    )
+
     keys = pygame.key.get_pressed()
 
     if keys[pygame.K_UP]:
@@ -87,7 +110,7 @@ while running:
 
     screen.fill((5, 5, 20))
 
-    # Draw stars
+    # Background stars
     for x, y, brightness in background_stars:
 
         pygame.draw.circle(
@@ -97,7 +120,6 @@ while running:
             1
         )
 
-    # Draw black hole
     blackhole.draw(screen)
 
     alive_particles = []
@@ -108,6 +130,10 @@ while running:
 
             particle.draw(screen)
             alive_particles.append(particle)
+
+        else:
+
+            absorbed_count += 1
 
     particles = alive_particles
 
@@ -129,9 +155,16 @@ while running:
         (255,255,255)
     )
 
+    absorbed_text = font.render(
+        f"Absorbed: {absorbed_count}",
+        True,
+        (255,255,255)
+    )
+
     screen.blit(fps_text, (10,10))
     screen.blit(mass_text, (10,40))
     screen.blit(star_text, (10,70))
+    screen.blit(absorbed_text, (10,100))
 
     pygame.display.update()
 
