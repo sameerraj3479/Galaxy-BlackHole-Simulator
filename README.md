@@ -153,9 +153,9 @@ For students and recruiters, it highlights problem-solving ability, software des
 
 ---
 
-## Demo
+## Project Demo
 
-![Black Hole Simulator Demo](screenshots/demo.gif)
+![Galaxy Black Hole Simulator](assets/demo.gif)
 
 ---
 
